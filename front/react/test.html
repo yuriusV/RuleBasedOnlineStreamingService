@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video id="localVideo" autoplay muted style="width:40%;"></video>
+    <video id="remoteVideo" autoplay style="width:40%;"></video>
+
+    <br />
+
+    <input type="button" id="start" onclick="start(true)" value="Start Video"></input>
+    <input type="button" id="beginAccess" onclick="start(true)" value="Begin access"></input>
+
+    <script src="test.js"></script>
+    <script type="text/javascript">
+        document.getElementById("beginAccess").onclick = function() {
+            pageReady();
+        }
+    </script>
+</body>
+</html>
